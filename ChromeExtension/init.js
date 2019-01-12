@@ -1396,7 +1396,7 @@
         "use strict";
         var i = {},
             a = function () {
-                fetch("https://raw.githubusercontent.com/zbot473/SurvivHacks/master/ChromeExtension/manifest.json").then(function (n) {
+                fetch("https://raw.githubusercontent.com/ALiangLiang/SurvivHacks/master/ChromeExtension/manifest.json").then(function (n) {
                     return n.json()
                 }).then(function (n) {
                     return function (n, e) {
