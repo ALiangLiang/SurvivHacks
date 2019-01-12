@@ -1462,15 +1462,15 @@
         "use strict";
         e.exports = {
 			// fe: o {game: r, particleBarn: l, localization: i, touch: e, inputBinds: e, …}
-            menu: "fe",
+            menu: "_e",
 			// N: i {pos: {…}, ppu: 16, zoom: 1.132234974067752, f: 0.5785845588235294, screenWidth: 1259, …}
-            camera: "N",
+            camera: "U",
 			// Ee: o {bullets: Array(0)}
             bullets: "Oe",
 			// can not find planes variable
             planes: "Re",
 			// ct: 3058
-            activeId: "ct",
+            activeId: "mt",
 			// f: 1
             targetZoom: "f",
 			// ;t: r {idToObj: {…}, types: {…}, seenCount: 34}
@@ -1481,27 +1481,27 @@
             map: "Ae",
             input: {
 				// ye: e {input: o, config: e, binds: Array(36), boundKeys: {…}, menuHovered: false}
-                main: "ye",
+                main: "xe",
                 input: "input",
                 mousePressed: "$"
             },
             activePlayer: {
 				// dt: n {bodySprite: e, chestSprite: e, helmetSprite: e, backpackSprite: e, handLSprite: e, …}
                 main: "dt",
-                netData: "q",
-                localData: "U"
+                netData: "H",
+                localData: "K"
             },
             playerBarn: {
 				// Ie: s {ne: i, At: {…}, teamInfo: {…}, teammateData: {…}}
                 main: "De",
-                players: "It"
+                players: "Dt"
             },
             lootBarn: {
 				// He: r {it: i, Pt: null}
-                main: "He",
-                itemf: "Pt",
-                lootPool: "it",
-                pool: "de"
+                main: "Ke",
+                itemf: "Ct",
+                lootPool: "rt",
+                pool: "ue"
             },
             version: "1.1.009",
             protocolVersion: 44
@@ -1901,7 +1901,7 @@
                     },
                     D = function (t) {
                         var i = getPos(),
-                            a = e.scope[n.camera].screenToPoint({
+                            a = e.scope[n.camera].k({
                                 x: t.clientX,
                                 y: t.clientY
                             });
@@ -3578,9 +3578,9 @@
                 },
                 getMousePos = function (event) {
                     var playerPos = getCurPos();
-                    realMousePos = e.scope[n.camera].screenToPoint({
-                        x: event.clientX + playerPos.x,
-                        y: event.clientY + playerPos.y
+                    realMousePos = e.scope[n.camera].k({
+                        x: t.clientX,
+                        y: t.clientY
                     });
                 },
                 selectEnemy = function () {
